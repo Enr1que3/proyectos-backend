@@ -21,12 +21,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RestController
 @RequestMapping("/v1")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
-public class PruebaController {
+public class DeportistaController {
     
-    private DeportistaService deportistaService;
+    private final DeportistaService deportistaService;
     
     @Autowired
-    public PruebaController(DeportistaService deportistaService){
+    public DeportistaController(DeportistaService deportistaService){
         this.deportistaService = deportistaService;
     }
     

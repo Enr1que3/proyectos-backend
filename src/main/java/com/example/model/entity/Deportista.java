@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 
@@ -22,7 +23,7 @@ public class Deportista {
     private String Am;
     
     private String especialidad;
-
+    
     public Long getId() {
         return id;
     }
@@ -62,7 +63,6 @@ public class Deportista {
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
-    
     
     
 }
