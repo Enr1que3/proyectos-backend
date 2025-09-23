@@ -29,7 +29,7 @@ public class EmailServiceImpl implements EmailService{
     
     private final TemplateEngine engine;
     
-    private IDeportista deportista;
+    private final IDeportista deportista;
 
     
     public EmailServiceImpl(JavaMailSender javaMailSender, TemplateEngine engine, IDeportista deportista) {
