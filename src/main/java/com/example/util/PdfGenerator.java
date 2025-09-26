@@ -1,6 +1,7 @@
 package com.example.util;
 
 
+// https://javatechonline.com/generating-dynamic-pdf-report-using-spring-boot/
 import com.example.DAO.IDeportista;
 import com.example.model.entity.Deportista;
 import com.itextpdf.text.BaseColor;
@@ -134,7 +135,7 @@ public class PdfGenerator {
     
     private String getPdfNameWithDate() {
         String localDateString = LocalDateTime.now().format(DateTimeFormatter.ofPattern(localDateFormat));
-        return pdfDir + fileName + "-" + localDateString + ".pdf";
+        return pdfDir + fileName + " " + localDateString + ".pdf";
     }
     
 }
